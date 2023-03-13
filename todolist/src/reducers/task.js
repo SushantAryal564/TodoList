@@ -8,7 +8,7 @@ const initialState = {
 const handleTaskAdd = (state, { payload }) => {
   const task = [
     ...state.task,
-    { id: state?.task?.length + 1, title: payload, completed: false },
+    { id: state?.task?.length + 1, detail: payload, completed: false },
   ];
   return { ...state, task };
 };
